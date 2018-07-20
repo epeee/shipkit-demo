@@ -8,7 +8,9 @@ buildscript {
     }
 }
 
-allprojects {
+apply plugin: "org.shipkit.java"
+
+subprojects {
     repositories {
         jcenter()
     }
@@ -22,7 +24,6 @@ allprojects {
         testRuntime "org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}"
     }
 
-    group = "io.github.epeee.shipkit-example"
+    group = "io.github.epeee.shipkit-demo"
 }
 
-apply plugin: "org.shipkit.java"
