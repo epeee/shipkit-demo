@@ -25,4 +25,4 @@ allprojects {
     group = "io.github.epeee.shipkit-example"
 }
 
-//apply plugin: "org.shipkit.java"
+apply plugin: "org.shipkit.java"
