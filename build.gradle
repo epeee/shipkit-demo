@@ -25,5 +25,9 @@ subprojects {
     }
 
     group = "io.github.epeee.shipkit-demo"
+
+    test {
+        useJUnitPlatform()
+    }
 }
 
