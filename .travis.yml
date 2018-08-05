@@ -3,20 +3,30 @@
 
 language: java
 
+matrix:
+  allow_failures:
+  - oraclejdk-ea
+
 jdk:
-  - oraclejdk8
+- oraclejdk8
+- oraclejdk9
+- oraclejdk10
+- oraclejdk11
+jobs:
+  include:
+  - stage: deploy
+    jdk: oraclejdk8
+    script: ./gradlew ciPerformRelease
 
-#Skipping install step to avoid having Travis run arbitrary './gradlew assemble' task
-# https://docs.travis-ci.com/user/customizing-the-build/#Skipping-the-Installation-Step
-install:
-  - true
-
-#Don't build tags
+#don't build tags
 branches:
   except:
   - /^v\d/
 
-#Build and perform release (if needed)
+# Below skips the installation step completely (https://docs.travis-ci.com/user/customizing-the-build/#Skipping-the-Installation-Step)
+install:
+- true
+
 script:
-  - ./gradlew --version
-  - ./gradlew build -s && ./gradlew ciPerformRelease -s
+- ./gradlew --version
+- ./gradlew build
