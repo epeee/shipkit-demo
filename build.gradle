@@ -31,3 +31,7 @@ subprojects {
     }
 }
 
+wrapper {
+    gradleVersion = "4.10-rc-2"
+    distributionSha256Sum = "e90d3c32910e259814bcca82b3911172ecca1ff1ab5ed69b4de3c1df8b378b40"
+}
