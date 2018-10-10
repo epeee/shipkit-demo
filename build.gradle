@@ -17,7 +17,7 @@ subprojects {
 
     apply plugin: 'java'
 
-    def junitJupiterVersion = '5.2.0'
+    def junitJupiterVersion = '5.3.1'
 
     dependencies {
         testCompile "org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}"
