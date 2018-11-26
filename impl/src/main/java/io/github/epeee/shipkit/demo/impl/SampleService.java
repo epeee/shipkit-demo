@@ -9,7 +9,6 @@ public class SampleService implements Service {
 
     @Override
     public boolean doSomething() {
-        System.out.println("SampleService");
         return true;
     }
 }
