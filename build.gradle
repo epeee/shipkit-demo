@@ -32,6 +32,6 @@ subprojects {
 }
 
 wrapper {
-    gradleVersion = "5.0-milestone-1"
-    distributionSha256Sum = "0c4e5366b479934844da39c156c20d509f6b2c40b978c10598221fd591c0cf57"
+    gradleVersion = "5.0"
+    distributionSha256Sum = "6157ac9f3410bc63644625b3b3e9e96c963afd7910ae0697792db57813ee79a6"
 }

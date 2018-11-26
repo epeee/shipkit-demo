@@ -5,17 +5,17 @@ language: java
 
 matrix:
   allow_failures:
-  - oraclejdk-ea
+  - openjdk-ea
 
 jdk:
-- oraclejdk8
-- oraclejdk9
-- oraclejdk10
+- openjdk8
+- openjdk9
+- openjdk10
 - openjdk11
 jobs:
   include:
   - stage: deploy
-    jdk: oraclejdk8
+    jdk: openjdk8
     script: ./gradlew ciPerformRelease
 
 #don't build tags
