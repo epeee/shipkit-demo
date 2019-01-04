@@ -5,10 +5,18 @@ buildscript {
     }
     dependencies {
         classpath "org.shipkit:shipkit:2.0.31"
+        classpath "com.gradle:build-scan-plugin:2.1"
     }
 }
 
+apply plugin: "com.gradle.build-scan"
 apply plugin: "org.shipkit.java"
+
+buildScan {
+    publishAlwaysIf(System.getenv("CI") != null)
+    termsOfServiceUrl = "https://gradle.com/terms-of-service"
+    termsOfServiceAgree = "yes"
+}
 
 subprojects {
     repositories {
