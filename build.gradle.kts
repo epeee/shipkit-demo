@@ -31,7 +31,7 @@ subprojects {
         plugin("java")
     }
 
-    val junitJupiterVersion = "5.3.2"
+    val junitJupiterVersion = "5.4.0"
 
     val testRuntimeOnly by configurations
     val testCompile by configurations
