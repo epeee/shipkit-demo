@@ -1,5 +1,3 @@
-import com.gradle.scan.plugin.BuildScanExtension
-
 buildscript {
     repositories {
         mavenLocal()
@@ -7,16 +5,18 @@ buildscript {
     }
     dependencies {
         classpath("org.shipkit:shipkit:2.0.31")
-        classpath("com.gradle:build-scan-plugin:2.1")
     }
 }
 
+plugins {
+    id("com.gradle.build-scan") version "2.1"
+}
+
 apply {
-    plugin("com.gradle.build-scan")
     plugin("org.shipkit.java")
 }
 
-configure<BuildScanExtension> {
+buildScan {
     publishAlwaysIf(System.getenv("CI") != null)
     termsOfServiceUrl = "https://gradle.com/terms-of-service"
     termsOfServiceAgree = "yes"
