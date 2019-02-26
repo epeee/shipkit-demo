@@ -28,16 +28,16 @@ subprojects {
     }
 
     apply {
-        plugin("java")
+        plugin("java-library")
     }
 
     val junitJupiterVersion = "5.4.0"
 
     val testRuntimeOnly by configurations
-    val testCompile by configurations
+    val testImplementation by configurations
 
     dependencies {
-        testCompile("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
+        testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
     }
 
