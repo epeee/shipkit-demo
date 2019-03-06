@@ -7,6 +7,9 @@ package io.github.epeee.shipkit.demo.api;
  */
 public interface Service {
 
+    /**
+     * Default implementation.
+     */
     default boolean doSomething() {
         return false;
     }
