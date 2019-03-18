@@ -31,7 +31,7 @@ subprojects {
         plugin("java-library")
     }
 
-    val junitJupiterVersion = "5.4.0"
+    val junitJupiterVersion = "5.4.1"
 
     val testRuntimeOnly by configurations
     val testImplementation by configurations
