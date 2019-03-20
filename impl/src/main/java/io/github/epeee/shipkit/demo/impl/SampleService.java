@@ -11,7 +11,6 @@ public class SampleService implements Service {
 
     /**
      *
-     *
      * @since 0.0.1
      */
     @Override
