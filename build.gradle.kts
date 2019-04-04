@@ -4,7 +4,7 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("org.shipkit:shipkit:2.2.2")
+        classpath("org.shipkit:shipkit:2.2.3")
     }
 }
 
