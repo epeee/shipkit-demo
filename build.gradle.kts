@@ -9,7 +9,7 @@ buildscript {
 }
 
 plugins {
-    id("com.gradle.build-scan") version "2.4"
+    id("com.gradle.build-scan") version "2.4.1"
 }
 
 apply {
