@@ -43,7 +43,7 @@ subprojects {
 
     group = "io.github.epeee.shipkit-demo"
 
-    tasks.withType<Test> {
+    tasks.withType<Test>().configureEach {
         useJUnitPlatform()
     }
 }
