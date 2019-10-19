@@ -10,7 +10,7 @@ matrix:
 jdk:
 - openjdk8
 - openjdk11
-- openjdk12
+- openjdk13
 jobs:
   include:
   - stage: deploy
