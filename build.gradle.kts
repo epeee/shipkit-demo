@@ -8,10 +8,6 @@ buildscript {
     }
 }
 
-plugins {
-    id("com.gradle.build-scan") version "2.4.2"
-}
-
 apply {
     plugin("org.shipkit.java")
 }
@@ -49,6 +45,6 @@ subprojects {
 }
 
 tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "5.6.3"
-    distributionSha256Sum = "60a6d8f687e3e7a4bc901cc6bc3db190efae0f02f0cc697e323e0f9336f224a3"
+    gradleVersion = "6.0-rc-1"
+    distributionSha256Sum = "e73ab0c91f71e051f9798c6c89e0b9c0ecc95f0877e683554425c68835998509"
 }
