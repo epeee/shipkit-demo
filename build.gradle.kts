@@ -33,8 +33,9 @@ subprojects {
     val testImplementation by configurations
 
     dependencies {
-        testImplementation("org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
-        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
+        testImplementation(platform("org.junit:junit-bom:$junitJupiterVersion"))
+        testImplementation("org.junit.jupiter:junit-jupiter-api")
+        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     }
 
     group = "io.github.epeee.shipkit-demo"
