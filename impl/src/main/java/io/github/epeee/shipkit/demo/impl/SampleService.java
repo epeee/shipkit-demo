@@ -10,6 +10,7 @@ import io.github.epeee.shipkit.demo.api.Service;
 public class SampleService implements Service {
 
     /**
+     *
      * @since 0.0.1
      */
     @Override
