@@ -46,6 +46,6 @@ subprojects {
 }
 
 tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "6.4-rc-2"
-    distributionSha256Sum = "a74a1d4ff45e7b6f42c7384546bba2620e23a1172d4b3dcfc1418000ad5d793c"
+    gradleVersion = "6.4-rc-3"
+    distributionSha256Sum = "b80df15a8398f020e5689233d912704e42c9dc567cd32c539a3c59f8616e8954"
 }
