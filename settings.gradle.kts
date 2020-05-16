@@ -4,5 +4,5 @@ include("api")
 include("impl")
 
 plugins {
-    id("com.gradle.enterprise").version("3.3")
+    id("com.gradle.enterprise").version("3.3.1")
 }
