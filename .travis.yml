@@ -3,6 +3,8 @@
 
 language: java
 
+dist: trusty
+
 matrix:
   allow_failures:
   - openjdk-ea
